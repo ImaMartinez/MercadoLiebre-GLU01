@@ -26,7 +26,7 @@ app.post('/register', (req, res) => {
     res.redirect('/');
 });
 
-const port = process.env.PORT || 3030;
-app.listen(port, () => {
-    console.log(`Servidor iniciado en http://localhost:${port}`);
+
+app.listen(process.env.PORT || 3030, () => {
+    console.log(`Servidor iniciado en http://localhost:${process.env.PORT}`);
 });
