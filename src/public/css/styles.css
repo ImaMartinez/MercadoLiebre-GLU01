@@ -104,14 +104,6 @@ button {
 }
 
 /* fin barra de busqueda */
-
-div.burger-menu {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .products {
   display: flex;
   align-items: center;
@@ -260,10 +252,6 @@ article div.main-article {
   transition: transform 1500ms;
 }
 
-.formulario:hover {
-  background-color: #0022AA;
-}
-
 .formulario h2 {
   text-align: center;
   color: #333;
@@ -388,6 +376,11 @@ input[type="checkbox"] {
 
 @media (max-width: 769px) {
 
+  div.burger-menu {
+    display: flex;
+    justify-content: center;
+  }
+
   main section article .description-product {
     display: none;
   }
@@ -424,5 +417,4 @@ input[type="checkbox"] {
   .top-header p {
     display: none;
   }
-
 }
