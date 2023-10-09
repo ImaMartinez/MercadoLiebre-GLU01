@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+require("dotenv").config();
 
 const app = express();
 
@@ -25,7 +26,7 @@ app.post('/register', (req, res) => {
     res.redirect('/');
 });
 
-const port = 3030;
+const port = process.env.PORT || 3030;
 app.listen(port, () => {
     console.log(`Servidor iniciado en http://localhost:${port}`);
 });
